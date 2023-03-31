@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.d-flex{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #fff;
+    padding: 20px 30px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    
+}
+.text-center{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+.form-group{
+    position: relative;
+}
+.form-control{
+    width: 95%;
+    height: 45px;
+    border: 1px solid lightgrey;
+    padding-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s;
+
+}
+#showBtn{
+    position: absolute;
+    right: 4%;
+    top: 32%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    user-select: none;
+    display: none;
+}
+.indicator{
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.indicator span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+.indicator span.medium:before {
+    background-color: #f6f916;
+}
+.indicator span.strong:before {
+    background-color: #23ad5c;
+}
+.indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
